@@ -1,7 +1,7 @@
 .slider{
 overflow: hidden;
 position:relative;
-
+width: 100%;
 }
 
 .slider img {
@@ -83,27 +83,28 @@ position:relative;
         top: 40%;
         left: 10%;
         background-color: rgba(0, 0, 0, 0.7);
-        width:35%;
-        height:65vh;
+        width:45%;
         border-radius:5px;
-        color:#fff
-
+        color:#fff;
+        padding:0.5rem;
+        box-sizing: border-box;
+        z-index: 3
 
     }
 
     .slide-form input {
-
-        margin-top: 20px;
+        margin-top: 5px;
     }
 
     .slide-form textarea {
 
-        margin-top: 20px;
+        margin-top: 5px;
     }
 
     .slide-form select {
+        
 
-        margin-top: 20px;
+        margin-top: 5px;
     }
 
     .slide-form .flex_space input:nth-child(odd) {
@@ -115,27 +116,56 @@ position:relative;
         background-color: aqua;
     }
 
+    .slide-form form {
+        width:100%
+    }
+
+    .form-control{
+        width: 48%;
+    }
+
+    .schedule{
+        margin-left: 80px;
+    }
 
     @media screen and (max-width: 768px) {
         .slider{
-            height:65vh;
+            height: 80%;
         }
 
-        .slider img {
-            height: 65vh
+
+
+        .slider img{
+            height: 90%;
         }
 
         .slide-form{
             left:5%;
-            top:40%;
+            top:60%;
             width:90%;
-            height:55vh;
+            height: 50%;
+           
 
         }
             
 
-        
+        .control-btn button {
+            display: none;
+        }
+        /* .flex_space {
+        flex-direction: column;
+        } */
 
+        .form-control{
+            width: 98%;
+        }
+
+        .schedule{
+            /* left: 30%;
+            flex-direction: wrap; */
+            display:none;
+        }
+    
 
     }
 
