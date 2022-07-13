@@ -36,7 +36,7 @@ const Navbar = () => {
                         <div className="login-area flex">
                             
                             <li>
-                            <Link to='/contact'>
+                            <Link to='/'>
                                 <button className="primary-btn">Appointment</button>
                              </Link>
                             </li>
@@ -51,14 +51,14 @@ const Navbar = () => {
 
                 <header>
 
-                    <div className="container flex_space">
+                    <div className="container flex_spac">
                         <div className="logo">
-                           <img src={logo} alt="Tigwalogo" />
+                        <Link to='/' > <img src={logo} alt="Tigwalogo" ></img> </Link>
                         </div>
 
-                        <div className="contact flex_space">
+                        <div className="contact flex_spac">
 
-                            <div className="box flex_space">
+                            <div className="box flex_spac">
                                 <div className="icons">
                                     <i className="far fa-clock"></i>
                                 </div>
@@ -68,7 +68,7 @@ const Navbar = () => {
                                     <Link to="/contact">Monday - Sunday: 24/7</Link>
                                 </div>
                             </div>
-                                <div className="box flex_space">
+                                <div className="box flex_spac">
                                         <div className="icons">
                                             <i className="fas fa-phone-volume"></i>
                                         </div>
@@ -79,14 +79,14 @@ const Navbar = () => {
                                         </div>
                                 </div>
 
-                                <div className="box flex_space">
+                                <div className="box flex_spac">
                                         <div className="icons">
                                             <i className="far fa-envelope"></i>
                                         </div>
 
                                         <div className="text">
                                             <h4>Mail Us</h4>
-                                            <Link to="/contact">info@tigwacare.com</Link>
+                                            <Link to="/contact">enquiries@tiqwacare.onmicrosoft.com</Link>
                                         </div>
                                 </div>
                         </div>

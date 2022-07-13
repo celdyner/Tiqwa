@@ -1,7 +1,7 @@
 .slider{
 overflow: hidden;
 position:relative;
-
+width: 100%;
 }
 
 .slider img {
@@ -83,27 +83,28 @@ position:relative;
         top: 40%;
         left: 10%;
         background-color: rgba(0, 0, 0, 0.7);
-        width:35%;
-        height:65vh;
+        width:45%;
         border-radius:5px;
-        color:#fff
-
+        color:#fff;
+        padding:0.5rem;
+        box-sizing: border-box;
+        z-index: 3
 
     }
 
     .slide-form input {
-
-        margin-top: 20px;
+        margin-top: 5px;
     }
 
     .slide-form textarea {
 
-        margin-top: 20px;
+        margin-top: 5px;
     }
 
     .slide-form select {
+        
 
-        margin-top: 20px;
+        margin-top: 5px;
     }
 
     .slide-form .flex_space input:nth-child(odd) {
@@ -115,28 +116,58 @@ position:relative;
         background-color: aqua;
     }
 
+    .slide-form form {
+        width:100%
+    }
+
+    .form-control{
+        width: 48%;
+    }
 
     @media screen and (max-width: 768px) {
         .slider{
-            height:65vh;
+            height: 114vh;
         }
 
-        .slider img {
-            height: 65vh
+        .slider img{
+            height: 114vh;
         }
 
         .slide-form{
             left:5%;
-            top:40%;
+            top:54%;
             width:90%;
-            height:55vh;
+            height: 111%;
+            background-color:  rgba(0, 0, 0, 0.7);
+           
 
         }
+
+
             
 
-        
+        .control-btn .prev {
+            top: 34%;
+            left : -2%;
+        }
 
 
+        .control-btn .next {
+            top: 34%;
+            right : -2%;
+        }
+        .flex_space {
+        flex-direction: column;
+        }
+
+        .form-control{
+            width: 100%;
+        }
+
+        .control-btn i {
+            background-color: rgba(0, 0, 0, 0.7);
+
+        }
     }
 
 /* slide form */

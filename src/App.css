@@ -27,6 +27,13 @@ a {
 .flex_space{
     display: flex;
     justify-content: space-between;
+    width:100%;
+}
+
+.flex_spac{
+    display: flex;
+    margin-left: 100px;
+    width:100%;
 }
 
 .container{
@@ -68,3 +75,5 @@ input {
     outline:none;
     border:none;
 }
+
+
