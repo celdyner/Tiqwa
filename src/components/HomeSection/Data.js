@@ -4,20 +4,20 @@ const  Data = [
 
 {
 
-    images: "images/slide.jpg",
+    images: "images/slider-1.jpg",
 },
 
 
 {
 
-    images: "images/slide.jpg",
+    images: "images/slider-2.jpg",
 
    
 },
 
 {
 
-    images: "images/slide.jpg",
+    images: "images/slider-3.jpg",
 },
 
 ]

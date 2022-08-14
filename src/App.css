@@ -27,6 +27,13 @@ a {
 .flex_space{
     display: flex;
     justify-content: space-between;
+    width:100%;
+}
+
+.flex_spac{
+    display: flex;
+    margin-left: 100px;
+    width:100%;
 }
 
 .container{
@@ -68,3 +75,29 @@ input {
     outline:none;
     border:none;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  
+  .main-content {
+    width: 70%;
+  }
+  /*-----------side-content-----------*/
+  
+  .side-content {
+    width: 30%;
+    margin-left: 40px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+   
+  }
+
+

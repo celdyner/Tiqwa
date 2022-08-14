@@ -1,5 +1,9 @@
 import React from 'react'
 import Hero from "../HomeSection/Hero"
+import HomeAbout from '../HomeSection/HomeAbout'
+import Gallery from '../gallery/Gallery'
+
+
 
 
 const Home = () => {
@@ -7,6 +11,11 @@ const Home = () => {
     <>
     
     <Hero />
+    
+    <HomeAbout />
+
+
+    <Gallery />
     
     </>
   )

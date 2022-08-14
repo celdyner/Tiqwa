@@ -1,0 +1,10 @@
+form textarea,
+form input {
+  width: 100%;
+  border: 2px solid #17035e;
+  margin-top: 10px
+}
+
+form span label {
+  color: crimson;
+}

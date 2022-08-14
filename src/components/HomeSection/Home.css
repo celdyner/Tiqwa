@@ -1,7 +1,6 @@
 .slider{
 overflow: hidden;
 position:relative;
-
 }
 
 .slider img {
@@ -80,30 +79,32 @@ position:relative;
 
     .slide-form{
         position: absolute;
-        top: 40%;
+        top: 5%;
         left: 10%;
         background-color: rgba(0, 0, 0, 0.7);
         width:35%;
-        height:65vh;
         border-radius:5px;
-        color:#fff
-
+        color:#fff;
+        height: 72vh;
+        padding:0.5rem;
+        box-sizing: border-box;
+        z-index: 3
 
     }
 
     .slide-form input {
-
-        margin-top: 20px;
+        margin-top: 5px;
     }
 
     .slide-form textarea {
 
-        margin-top: 20px;
+        margin-top: 5px;
     }
 
     .slide-form select {
+        
 
-        margin-top: 20px;
+        margin-top: 5px;
     }
 
     .slide-form .flex_space input:nth-child(odd) {
@@ -115,28 +116,54 @@ position:relative;
         background-color: aqua;
     }
 
+    .slide-form form {
+        width:100%
+    }
+
+    .form-control{
+        width: 48%;
+    }
 
     @media screen and (max-width: 768px) {
-        .slider{
-            height:65vh;
-        }
+       
+            .slider {
+              height: 65vh;
+            }
+            .slide img {
+              height: 65vh;
+            }
+            .slide-form {
+              left: 5%;
+              top: 32%;
+              width: 90%;
+              height: 55vh;
+            }
+          
 
-        .slider img {
-            height: 65vh
-        }
-
-        .slide-form{
-            left:5%;
-            top:40%;
-            width:90%;
-            height:55vh;
-
-        }
             
 
-        
+        .control-btn .prev {
+            top: 34%;
+            left : -2%;
+        }
 
 
+        .control-btn .next {
+            top: 34%;
+            right : -2%;
+        }
+        .flex_space {
+        flex-direction: column;
+        }
+
+        .form-control{
+            width: 100%;
+        }
+
+        .control-btn i {
+            background-color: rgba(0, 0, 0, 0.7);
+
+        }
     }
 
 /* slide form */
